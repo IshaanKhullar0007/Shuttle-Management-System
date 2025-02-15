@@ -1,9 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+//Adjacency List
 unordered_map<int,unordered_map<int,int>> adjList;
 
-
+//Integer Mapping To Location Name
 map<int,string> idxToLocationName = {
     {0,"Main Gate"},
     {1,"CSE Block"},
@@ -17,6 +18,7 @@ map<int,string> idxToLocationName = {
     {9,"Biotech Block"}
 };
 
+//Student Class
 class Student{
     public:
         string name;
@@ -261,6 +263,7 @@ class Student{
         }
 };
 
+//Admin Class
 class Admin{
     public:
         string email;
@@ -519,7 +522,7 @@ class Admin{
             }
             cout<<endl;
         }
-    };
+};
     
 //Mapping Email to Admin
 unordered_map<string,Admin> mappingEmailToAdminDetails;
@@ -527,6 +530,7 @@ unordered_map<string,Admin> mappingEmailToAdminDetails;
 //Mapping Email to Students
 unordered_map<string,Student> mappingEmailToStudentsDetails;
 
+//Edges
 vector<vector<int>> edges = {
     {0,2,4},{2,9,2},{2,8,4},{9,7,2},{8,3,10},
     {7,1,2},{1,3,3},{2,7,5},{2,1,7},{1,8,2},
@@ -541,6 +545,7 @@ int main(){
         adjList[i[1]][i[0]] = i[2];
     }
 
+    // Initialize students and admins (example data).
     mappingEmailToStudentsDetails["ishaan@lpu.in"] = Student("Ishaan Khullar", 21, "ishaan@lpu.in", "ishaan123", false);
     mappingEmailToStudentsDetails["rahul@lpu.in"] = Student("Rahul Sharma", 22, "rahul@lpu.in", "rahul123", false);
     mappingEmailToStudentsDetails["priya@lpu.in"] = Student("Priya Mehta", 20, "priya@lpu.in", "priya123", false);
