@@ -549,7 +549,7 @@ int main(){
     mappingEmailToStudentsDetails["ishaan@lpu.in"] = Student("Ishaan Khullar", 21, "ishaan@lpu.in", "ishaan123", false);
     mappingEmailToStudentsDetails["rahul@lpu.in"] = Student("Rahul Sharma", 22, "rahul@lpu.in", "rahul123", false);
     mappingEmailToStudentsDetails["priya@lpu.in"] = Student("Priya Mehta", 20, "priya@lpu.in", "priya123", false);
-    mappingEmailToStudentsDetails["1"] = Student("Sneha Verma", 23, "sneha@lpu.in", "1", false);
+    mappingEmailToStudentsDetails["sneha@lpu.in"] = Student("Sneha Verma", 23, "sneha@lpu.in", "sneha123", false);
     
     mappingEmailToAdminDetails["admin1@lpu.in"] = Admin("admin1@lpu.in","pass123");
     mappingEmailToAdminDetails["admin2@lpu.in"] = Admin("admin2@lpu.in","pass123");
